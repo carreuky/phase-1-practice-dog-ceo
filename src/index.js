@@ -63,6 +63,9 @@ function checkFirstLetter(letter) {
       let li = document.createElement("li");
       li.innerText = array_names[i];
       img_name_div.appendChild(li);
+      li.addEventListener("click", () => {
+        li.style.color = "red";
+      });
     }
   }
 }
